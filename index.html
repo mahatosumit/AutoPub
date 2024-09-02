@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publication Summary Generator</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- XLSX Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.2/xlsx.full.min.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">AutoPub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#upload">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#profile">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mt-4">
+    <section id="upload" class="upload-section">
+      <div class="text-center mb-4">
+        <h2>Upload Publication Records</h2>
+        <input type="file" id="fileInput" accept=".xlsx" class="form-control-file mb-2" />
+        <button id="processFile" class="btn btn-primary">Process File</button>
+      </div>
+    </section>
+
+   
+
+
+    <section id="profile" class="profile-section mt-4">
+        <h2 class="text-center mb-4">Faculty Profiles</h2>
+        <div class="row">
+          <!-- Profile 1 -->
+          <div class="col-md-4">
+            <div class="card p-3 profile-card">
+              <h3>Dr. Jane Doe</h3>
+              <p><strong>Department:</strong> Computer Science</p>
+              <p><strong>Email:</strong> jane.doe@example.com</p>
+              <p><strong>Research Interests:</strong> Machine Learning, AI</p>
+            </div>
+          </div>
+      
+          <!-- Profile 2 -->
+          <div class="col-md-4">
+            <div class="card p-3 profile-card">
+              <h3>Dr. John Smith</h3>
+              <p><strong>Department:</strong> Electrical Engineering</p>
+              <p><strong>Email:</strong> john.smith@example.com</p>
+              <p><strong>Research Interests:</strong> Embedded Systems, IoT</p>
+            </div>
+          </div>
+      
+          <!-- Profile 3 -->
+          <div class="col-md-4">
+            <div class="card p-3 profile-card">
+              <h3>Dr. Emily Brown</h3>
+              <p><strong>Department:</strong> Mechanical Engineering</p>
+              <p><strong>Email:</strong> emily.brown@example.com</p>
+              <p><strong>Research Interests:</strong> Robotics, Automation</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+  </main>
+</section>
+
+
+  <section id="summary" class="summary-section">
+    <div class="container">
+        <h1>Publication Summary</h1>
+        <div class="summary-card">
+            <h2>Exploring the Impact of AI on Modern Healthcare</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime facilis aliquam fuga odio corrupti suscipit esse rerum quasi iure.</p>
+            <p><strong>Authors:</strong> Dr. Jane Smith, Dr. John Doe</p>
+            <p><strong>Journal:</strong> International Journal of Healthcare</p>
+            <p><strong>Year:</strong> 2024</p>
+            <p><strong>Abstract:</strong> This study explores how artificial intelligence is transforming modern healthcare practices. The research includes an analysis of AI applications in diagnostics, patient care, and administrative processes, providing insights into the potential benefits and challenges.</p>
+        </div>
+        <div class="summary-card">
+            <h2>Advancements in Robotics for Industrial Automation</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime facilis aliquam fuga odio corrupti suscipit esse rerum quasi iure.</p>
+            <p><strong>Authors:</strong> Dr. Emily White, Dr. Robert Brown</p>
+            <p><strong>Journal:</strong> Journal of Robotics and Automation</p>
+            <p><strong>Year:</strong> 2024</p>
+            <p><strong>Abstract:</strong> This paper discusses recent advancements in robotics technology and their applications in industrial automation. Key topics include robotics design, control systems, and the impact of automation on manufacturing efficiency and workforce dynamics.</p>
+        </div>
+    </div>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3 mt-4">
+    <p>&copy; 2024 Publication Summary Generator</p>
+  </footer>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
